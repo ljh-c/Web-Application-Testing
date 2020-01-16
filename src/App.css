@@ -1,0 +1,93 @@
+:root {
+  --black: #0d0d0d;
+  --red: #ff2d2b;
+}
+
+.App {
+  text-align: center;
+}
+
+.display {
+  width: 58%;
+  margin: 2.5rem auto;
+  background-color: #0b5402;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  border: 4px solid #aaaaaa;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  height: 20rem;
+}
+
+.balls, .strikes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.balls_title, .strikes_title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 0;
+}
+
+.value {
+  /* font-family: 'Ozone'; */
+  font-size: 5rem;
+  color: var(--red);
+  width: 7rem;
+  text-align: center;
+  background-color: var(--black);
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 1.6rem;
+  border: 1px solid white;
+}
+
+.dashboard {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  text-decoration: none;
+  background: #414141;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background: #a2272d;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
